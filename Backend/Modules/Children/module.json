@@ -1,0 +1,11 @@
+{
+    "name": "Children",
+    "alias": "children",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Children\\Providers\\ChildrenServiceProvider"
+    ],
+    "files": []
+}
