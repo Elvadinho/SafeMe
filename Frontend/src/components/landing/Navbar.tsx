@@ -5,6 +5,7 @@ import ButtonLink from './ButtonLink'
 import LanguageSwitcher from './LanguageSwitcher'
 import Logo from './Logo'
 import { NAV_LINKS } from './navLinks'
+import { withBase } from '../../utils/withBase'
 
 // A flat teal header, always the same color (like a "band"), sticky at the top.
 export default function Navbar() {
@@ -38,7 +39,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b-2 border-teal-deep bg-teal">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <a href="/" aria-label={t('nav.home')} className="rounded-md">
+        <a href={withBase('/')} aria-label={t('nav.home')} className="rounded-md">
           <Logo tone="dark" />
         </a>
 
@@ -65,7 +66,7 @@ export default function Navbar() {
           {/* the wrapper hides it on phones: putting "hidden" on ButtonLink itself
               would clash with its own "inline-flex" class (and inline-flex wins) */}
           <div className="hidden sm:block">
-            <ButtonLink href="/#report">
+            <ButtonLink href={withBase('/#report')}>
               <Siren className="size-4" aria-hidden="true" />
               {t('nav.report')}
             </ButtonLink>
@@ -107,7 +108,7 @@ export default function Navbar() {
           </nav>
           <div className="mt-3 flex items-center justify-between gap-3 sm:hidden">
             <LanguageSwitcher tone="dark" />
-            <ButtonLink href="/#report" onClick={() => setIsOpen(false)}>
+            <ButtonLink href={withBase('/#report')} onClick={() => setIsOpen(false)}>
               <Siren className="size-4" aria-hidden="true" />
               {t('nav.report')}
             </ButtonLink>

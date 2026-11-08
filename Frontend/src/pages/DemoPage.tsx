@@ -4,6 +4,7 @@ import AlertCard from '../components/demo/AlertCard'
 import Footer from '../components/landing/Footer'
 import Navbar from '../components/landing/Navbar'
 import SectionHeading from '../components/landing/SectionHeading'
+import { withBase } from '../utils/withBase'
 
 // /demo: the live alert card (timer + map + sightings) on its own page.
 export default function DemoPage() {
@@ -17,7 +18,7 @@ export default function DemoPage() {
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 pb-24 pt-16 sm:px-6 lg:grid-cols-2 lg:pt-24">
           <div>
             <a
-              href="/"
+              href={withBase('/')}
               className="mb-8 inline-flex items-center gap-2 text-sm font-semibold label-mono text-teal hover:text-amber-deep"
             >
               <ArrowLeft className="size-4" aria-hidden="true" />

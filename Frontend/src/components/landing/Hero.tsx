@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { PlayCircle, Siren } from 'lucide-react'
 import ButtonLink from './ButtonLink'
 import CameroonMap from './CameroonMap'
+import { withBase } from '../../utils/withBase'
 
 // Each block of the hero fades up one after the other on page load
 const enter = (delayMs: number): CSSProperties => ({ animationDelay: `${delayMs}ms` })
@@ -42,7 +43,7 @@ export default function Hero() {
               <Siren className="size-5" aria-hidden="true" />
               {t('hero.ctaReport')}
             </ButtonLink>
-            <ButtonLink href="/demo" variant="onDark" size="lg">
+            <ButtonLink href={withBase('/demo')} variant="onDark" size="lg">
               <PlayCircle className="size-5" aria-hidden="true" />
               {t('hero.ctaDemo')}
             </ButtonLink>

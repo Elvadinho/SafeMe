@@ -1,11 +1,13 @@
+import { withBase } from '../../utils/withBase'
+
 // Shared by the Navbar and the Footer, so both menus always stay in sync.
-// "/#how" (with the slash) works from ANY page: on /demo it goes back home first.
+// withBase('/#how') works from ANY page and ANY host ("/" locally, "/SafeMe/" on GitHub Pages).
 // `as const` keeps each key as an exact string type ('nav.how'…),
 // which lets the typed t() function check that the key really exists.
 export const NAV_LINKS = [
-  { href: '/#how', key: 'nav.how' },
-  { href: '/#modules', key: 'nav.modules' },
-  { href: '/#tracker', key: 'nav.tracker' },
-  { href: '/#ai', key: 'nav.ai' },
-  { href: '/demo', key: 'nav.demo' },
+  { href: withBase('/#how'), key: 'nav.how' },
+  { href: withBase('/#modules'), key: 'nav.modules' },
+  { href: withBase('/#tracker'), key: 'nav.tracker' },
+  { href: withBase('/#ai'), key: 'nav.ai' },
+  { href: withBase('/demo'), key: 'nav.demo' },
 ] as const
