@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   DESIGN TOKENS — SafeMe brand (teal / amber / slate)
+   Layout language inspired by "band" pages: flat colors, condensed titles,
+   monospace labels, hard offset shadows. No gradients, no glass.
+   Every --color-* becomes Tailwind classes: --color-teal → bg-teal, text-teal…
+   ========================================================================== */
+@theme {
+  /* 3 fonts, 3 jobs: display = big condensed titles, mono = labels, sans = text */
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand palette (from the SafeMe logo) */
+  --color-teal: #0e4d64;       /* main brand color, dark bands */
+  --color-teal-deep: #08394b;  /* borders, hard shadows, footer */
+  --color-teal-light: #1b6681; /* map tiles on teal */
+  --color-teal-soft: #e4eff2;  /* light teal backgrounds */
+  --color-amber: #f2a33a;      /* highlights, alerts on the map */
+  --color-amber-deep: #c2660e; /* main action ("Report"), urgency */
+  --color-amber-soft: #fdf1df;
+  --color-slate: #3d5560;      /* body text */
+  --color-muted: #6b7f88;      /* secondary text */
+  --color-line: #d5e0e4;       /* thin borders */
+  --color-cream: #f7f4ee;      /* light bands */
+  --color-white: #ffffff;
+
+  /* Aliases kept so the /demo card keeps working with the new palette */
+  --color-primary: var(--color-teal);
+  --color-primary-hover: var(--color-teal-deep);
+  --color-primary-soft: var(--color-teal-soft);
+  --color-urgent: var(--color-amber-deep);
+  --color-urgent-hover: #a5560b;
+  --color-urgent-soft: var(--color-amber-soft);
+  --color-safe: var(--color-teal);
+  --color-ink: var(--color-teal-deep);
+  --color-body: var(--color-slate);
+  --color-surface: #ffffff;
+  --color-surface-alt: var(--color-cream);
+
+  /* "Hard" shadow: a solid offset block, no blur */
+  --shadow-hard: 4px 4px 0 0 var(--color-teal-deep);
+  --shadow-hard-sm: 3px 3px 0 0 var(--color-teal-deep);
+
+  --animate-ring: ring 2.4s ease-out infinite;   /* pulse on the active city */
+  --animate-blink: blink 2.8s ease-in-out infinite; /* alert tiles on the map */
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-travel: travel 8s ease-in-out infinite alternate; /* tracker dot */
+
+  @keyframes ring {
+    from { transform: scale(0.6); opacity: 0.9; }
+    to   { transform: scale(2.4); opacity: 0; }
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.45; }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: none; }
+  }
+  @keyframes travel {
+    from { offset-distance: 0%; }
+    to   { offset-distance: 100%; }
+  }
+}
+
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* anchors stop below the sticky header */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white font-sans text-slate;
+  }
+
+  /* Condensed, heavy, tight titles everywhere */
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-stretch: 75%;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.02;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-amber);
+    outline-offset: 3px;
+  }
+}
+
+/* "Reveal on scroll" (see components/landing/Reveal.tsx) */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Small uppercase monospace label (eyebrows, stats, tags) */
+@utility label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* The "card" look of the whole site: white, 2px dark border, hard shadow */
+@utility card {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-teal-deep);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-hard);
+}

@@ -1,0 +1,233 @@
+{
+  "nav": {
+    "how": "How it works",
+    "modules": "Modules",
+    "tracker": "Tracker",
+    "ai": "AI",
+    "demo": "Demo",
+    "report": "Report",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "home": "SafeMe home",
+    "main": "Main navigation"
+  },
+  "hero": {
+    "eyebrow": "Cameroon · Verified alerts · FR / EN",
+    "titleStart": "When a child goes missing,",
+    "titleAccent": "every minute counts.",
+    "subtitle": "SafeMe replaces scattered social media posts with verified, geolocated alerts sent to the people who are actually nearby.",
+    "ctaReport": "Report a missing child",
+    "ctaDemo": "See the demo",
+    "stats": [
+      {
+        "value": "10",
+        "label": "Regions covered"
+      },
+      {
+        "value": "5 km",
+        "label": "Initial alert radius"
+      },
+      {
+        "value": "117",
+        "label": "Police, one tap away"
+      },
+      {
+        "value": "0",
+        "label": "Parent numbers exposed"
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why SafeMe",
+    "title": "Social media shares.",
+    "titleAccent": "SafeMe helps find.",
+    "text": "A WhatsApp post comes from a good place, but it exposes families to scammers and gets lost in the feed. SafeMe keeps the community's energy and removes the danger.",
+    "verified": {
+      "title": "Every alert is verified",
+      "text": "A moderator checks each alert before it goes public: no more hoaxes or false information.",
+      "child": "Amina N. · 7 years old",
+      "status": "Waiting for verification",
+      "approve": "Approve",
+      "reject": "Reject"
+    },
+    "masked": {
+      "title": "Protected number",
+      "text": "Contact goes through the app. The parents' phone number is never shown.",
+      "number": "+237 6•• ••• •42"
+    },
+    "nearby": {
+      "title": "Neighbours first",
+      "text": "People close to the last known place are alerted first, then the radius grows."
+    },
+    "timeline": {
+      "title": "Sightings on a map",
+      "text": "Every \"I saw this child\" is timed, located and visible to the family and authorities.",
+      "items": [
+        "Mokolo market · 14:32",
+        "Warda crossroads · 13:58",
+        "Bus station · 13:10"
+      ],
+      "live": "LIVE"
+    }
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "From the alert to the first sighting, in minutes",
+    "steps": [
+      {
+        "title": "The parent reports",
+        "text": "Photo, description, last place and time the child was seen."
+      },
+      {
+        "title": "A moderator verifies",
+        "text": "The alert is checked before it goes public, to stop false information."
+      },
+      {
+        "title": "Neighbours are alerted",
+        "text": "Nearby users get the alert, and the radius grows over time."
+      },
+      {
+        "title": "Sightings come in",
+        "text": "Every \"I saw this child\" appears live on the family's map."
+      }
+    ]
+  },
+  "modules": {
+    "eyebrow": "Two modules",
+    "title": "Protecting people, and what belongs to them",
+    "children": {
+      "tag": "Main module",
+      "title": "Missing children",
+      "text": "A verified, geolocated alert system, built for the first hours, the ones that matter most.",
+      "features": [
+        "Alerts approved before publishing",
+        "Live map of sightings",
+        "Countdown of the critical hours",
+        "Protected messaging with the family"
+      ],
+      "cta": "Report a missing child"
+    },
+    "documents": {
+      "tag": "Community module",
+      "title": "Found documents",
+      "text": "An ID card, a passport, a diploma? Help its owner get it back safely.",
+      "features": [
+        "Sensitive numbers masked",
+        "Search by the owner's name",
+        "Verification question before contact",
+        "Drop-off points on the map"
+      ],
+      "cta": "I found a document",
+      "sample": {
+        "type": "National ID card",
+        "name": "T•••••• E•••••",
+        "number": "No. •••• •••• 4821",
+        "found": "Found in Douala, Akwa",
+        "status": "Looking for the owner"
+      }
+    }
+  },
+  "tracker": {
+    "eyebrow": "Prevention",
+    "title": "A tracker to watch over the little ones",
+    "text": "A small ESP32 device sends the child's location. Parents set safe zones, and an SOS button triggers an alert instantly.",
+    "features": [
+      {
+        "title": "Safe zones",
+        "text": "Home, school: a notification as soon as the child leaves."
+      },
+      {
+        "title": "SOS button",
+        "text": "One press, and the parent gets the alert with the exact location."
+      },
+      {
+        "title": "Live location",
+        "text": "The route shows on the map, visible only to the family."
+      }
+    ],
+    "device": {
+      "name": "Amina's tracker",
+      "online": "Online",
+      "zone": "Safe zone",
+      "zoneName": "Les Lauriers School",
+      "inside": "Inside",
+      "battery": "Battery",
+      "sos": "SOS",
+      "sosHint": "Emergency button on the device",
+      "events": "Latest events",
+      "event1": "Arrived at school · 07:42",
+      "event2": "Left home · 07:15",
+      "mapLabel": "Map of the route from home to school, inside the safe zone"
+    }
+  },
+  "ai": {
+    "eyebrow": "AI assistants",
+    "title": "Smart help when every minute counts",
+    "items": [
+      {
+        "title": "Assistant for parents",
+        "text": "A step-by-step guide, in French or English, to fill in a complete alert."
+      },
+      {
+        "title": "Poster generator",
+        "text": "A bilingual poster with a QR code, ready to share on WhatsApp."
+      },
+      {
+        "title": "Sighting analysis",
+        "text": "Groups sightings by place and time to guide the search."
+      }
+    ],
+    "chat": {
+      "question": "My son didn't come home from school, what should I do?",
+      "answer": "Let's stay calm. Tell me the time and place he was last seen, and I'll prepare the alert with you.",
+      "languages": "Français · English"
+    }
+  },
+  "cta": {
+    "title": "Every minute counts.",
+    "text": "If a child is missing, report it now. If you found a document, help its owner get it back.",
+    "report": "Report a missing child",
+    "document": "I found a document",
+    "emergency": "In immediate danger, call the police on 117."
+  },
+  "footer": {
+    "tagline": "Together, let's find our children faster.",
+    "product": "Product",
+    "urgent": "Emergency",
+    "police": "Police: 117",
+    "firefighters": "Fire service: 118",
+    "rights": "All rights reserved.",
+    "made": "Made in Cameroon"
+  },
+  "demo": {
+    "eyebrow": "Interactive demo",
+    "title": "This is what a SafeMe alert looks like",
+    "text": "A fictional example: the timer runs live, the alert zone shows on the map, and neighbours can report the child in one tap.",
+    "back": "Back to home"
+  },
+  "card": {
+    "demo": "Demo example",
+    "alert": "Alert",
+    "verified": "Verified",
+    "age": "{{count}} years old",
+    "lastSeen": "Last seen",
+    "missingFor": "Missing for",
+    "mapLabel": "Alert zone around the place where the child was last seen, with two sightings",
+    "radius": "Alert radius · 5 km",
+    "sightings": "Nearby sightings",
+    "sighting1": "Mokolo market · 25 min ago",
+    "sighting2": "Warda crossroads · 1 h ago",
+    "cta": "I saw her"
+  },
+  "map": {
+    "label": "Tile map of Cameroon, with demo alerts and sightings around the main cities.",
+    "alerts_one": "{{count}} alert",
+    "alerts_other": "{{count}} alerts",
+    "sightings_one": "{{count}} sighting",
+    "sightings_other": "{{count}} sightings",
+    "legendAlerts": "Active alerts",
+    "legendSightings": "Sightings",
+    "demo": "Demo data"
+  }
+}

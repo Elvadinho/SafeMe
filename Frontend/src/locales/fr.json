@@ -1,0 +1,233 @@
+{
+  "nav": {
+    "how": "Comment ça marche",
+    "modules": "Modules",
+    "tracker": "Traceur",
+    "ai": "IA",
+    "demo": "Démo",
+    "report": "Signaler",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue",
+    "home": "Accueil SafeMe",
+    "main": "Navigation principale"
+  },
+  "hero": {
+    "eyebrow": "Cameroun · Alertes vérifiées · FR / EN",
+    "titleStart": "Quand un enfant disparaît,",
+    "titleAccent": "chaque minute compte.",
+    "subtitle": "SafeMe remplace les publications dispersées sur les réseaux sociaux par des alertes vérifiées, géolocalisées et envoyées aux personnes qui sont vraiment à proximité.",
+    "ctaReport": "Signaler une disparition",
+    "ctaDemo": "Voir la démo",
+    "stats": [
+      {
+        "value": "10",
+        "label": "Régions couvertes"
+      },
+      {
+        "value": "5 km",
+        "label": "Rayon d'alerte initial"
+      },
+      {
+        "value": "117",
+        "label": "Police, en un geste"
+      },
+      {
+        "value": "0",
+        "label": "Numéro de parent exposé"
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Pourquoi SafeMe",
+    "title": "Les réseaux sociaux partagent.",
+    "titleAccent": "SafeMe aide à retrouver.",
+    "text": "Une publication WhatsApp part d'une bonne intention, mais elle expose les familles aux arnaques et se perd dans le fil d'actualité. SafeMe garde l'élan de la communauté et retire le danger.",
+    "verified": {
+      "title": "Chaque alerte est vérifiée",
+      "text": "Un modérateur contrôle l'alerte avant publication : plus de canulars ni de fausses informations.",
+      "child": "Amina N. · 7 ans",
+      "status": "En attente de vérification",
+      "approve": "Approuver",
+      "reject": "Rejeter"
+    },
+    "masked": {
+      "title": "Numéro protégé",
+      "text": "Le contact passe par l'application. Le numéro des parents n'est jamais affiché.",
+      "number": "+237 6•• ••• •42"
+    },
+    "nearby": {
+      "title": "Les voisins d'abord",
+      "text": "Les personnes proches du dernier lieu connu sont alertées en premier, puis le rayon s'élargit."
+    },
+    "timeline": {
+      "title": "Des témoignages sur une carte",
+      "text": "Chaque « Je l'ai vu » est daté, localisé et visible par la famille et les autorités.",
+      "items": [
+        "Marché Mokolo · 14:32",
+        "Carrefour Warda · 13:58",
+        "Gare routière · 13:10"
+      ],
+      "live": "EN DIRECT"
+    }
+  },
+  "how": {
+    "eyebrow": "Comment ça marche",
+    "title": "De l'alerte au premier signalement, en quelques minutes",
+    "steps": [
+      {
+        "title": "Le parent signale",
+        "text": "Photo, description, dernier lieu et heure où l'enfant a été vu."
+      },
+      {
+        "title": "Un modérateur vérifie",
+        "text": "L'alerte est contrôlée avant publication pour éviter les fausses informations."
+      },
+      {
+        "title": "Les voisins sont alertés",
+        "text": "Les utilisateurs proches reçoivent l'alerte, et le rayon s'élargit avec le temps."
+      },
+      {
+        "title": "Les signalements arrivent",
+        "text": "Chaque « Je l'ai vu » apparaît en direct sur la carte de la famille."
+      }
+    ]
+  },
+  "modules": {
+    "eyebrow": "Deux modules",
+    "title": "Protéger les personnes, et ce qui leur appartient",
+    "children": {
+      "tag": "Module principal",
+      "title": "Enfants disparus",
+      "text": "Un système d'alerte vérifié et géolocalisé, pensé pour les premières heures, les plus décisives.",
+      "features": [
+        "Alertes validées avant publication",
+        "Carte des signalements en direct",
+        "Compteur des heures décisives",
+        "Messagerie protégée avec la famille"
+      ],
+      "cta": "Signaler une disparition"
+    },
+    "documents": {
+      "tag": "Module solidaire",
+      "title": "Documents trouvés",
+      "text": "Une CNI, un passeport, un diplôme ? Aidez son propriétaire à le récupérer en toute sécurité.",
+      "features": [
+        "Numéros sensibles masqués",
+        "Recherche par nom du propriétaire",
+        "Question de vérification avant contact",
+        "Points de dépôt sur la carte"
+      ],
+      "cta": "J'ai trouvé un document",
+      "sample": {
+        "type": "Carte nationale d'identité",
+        "name": "T•••••• E•••••",
+        "number": "N° •••• •••• 4821",
+        "found": "Trouvée à Douala, Akwa",
+        "status": "Propriétaire recherché"
+      }
+    }
+  },
+  "tracker": {
+    "eyebrow": "Prévention",
+    "title": "Un traceur pour veiller sur les plus petits",
+    "text": "Un petit boîtier ESP32 transmet la position de l'enfant. Les parents définissent des zones sûres, et un bouton SOS déclenche une alerte immédiate.",
+    "features": [
+      {
+        "title": "Zones sûres",
+        "text": "Maison, école : une notification dès que l'enfant en sort."
+      },
+      {
+        "title": "Bouton SOS",
+        "text": "Une pression, et le parent reçoit l'alerte avec la position exacte."
+      },
+      {
+        "title": "Position en direct",
+        "text": "Le trajet s'affiche sur la carte, visible seulement par la famille."
+      }
+    ],
+    "device": {
+      "name": "Traceur d'Amina",
+      "online": "En ligne",
+      "zone": "Zone sûre",
+      "zoneName": "École Les Lauriers",
+      "inside": "À l'intérieur",
+      "battery": "Batterie",
+      "sos": "SOS",
+      "sosHint": "Bouton d'urgence sur le boîtier",
+      "events": "Derniers événements",
+      "event1": "Arrivée à l'école · 07:42",
+      "event2": "Départ de la maison · 07:15",
+      "mapLabel": "Carte du trajet de la maison à l'école, à l'intérieur de la zone sûre"
+    }
+  },
+  "ai": {
+    "eyebrow": "Assistants IA",
+    "title": "Une aide intelligente quand chaque minute compte",
+    "items": [
+      {
+        "title": "Assistant pour les parents",
+        "text": "Un guide pas à pas, en français ou en anglais, pour remplir une alerte complète."
+      },
+      {
+        "title": "Générateur d'affiches",
+        "text": "Une affiche bilingue avec QR code, prête à partager sur WhatsApp."
+      },
+      {
+        "title": "Analyse des signalements",
+        "text": "Regroupe les témoignages par lieu et par heure pour orienter les recherches."
+      }
+    ],
+    "chat": {
+      "question": "Mon fils n'est pas rentré de l'école, que dois-je faire ?",
+      "answer": "Restons calmes. Indiquez l'heure et le lieu où il a été vu pour la dernière fois, je prépare l'alerte avec vous.",
+      "languages": "Français · English"
+    }
+  },
+  "cta": {
+    "title": "Chaque minute compte.",
+    "text": "Si un enfant a disparu, signalez-le maintenant. Si vous avez trouvé un document, aidez son propriétaire à le récupérer.",
+    "report": "Signaler une disparition",
+    "document": "J'ai trouvé un document",
+    "emergency": "En cas de danger immédiat, appelez la police au 117."
+  },
+  "footer": {
+    "tagline": "Ensemble, retrouvons nos enfants plus vite.",
+    "product": "Produit",
+    "urgent": "Urgence",
+    "police": "Police : 117",
+    "firefighters": "Pompiers : 118",
+    "rights": "Tous droits réservés.",
+    "made": "Conçu au Cameroun"
+  },
+  "demo": {
+    "eyebrow": "Démo interactive",
+    "title": "Voici à quoi ressemble une alerte SafeMe",
+    "text": "Un exemple fictif : le compteur tourne en direct, la zone d'alerte s'affiche sur la carte, et les voisins peuvent signaler l'enfant en un geste.",
+    "back": "Retour à l'accueil"
+  },
+  "card": {
+    "demo": "Exemple de démonstration",
+    "alert": "Alerte",
+    "verified": "Vérifiée",
+    "age": "{{count}} ans",
+    "lastSeen": "Vue pour la dernière fois",
+    "missingFor": "Disparue depuis",
+    "mapLabel": "Zone d'alerte autour du dernier lieu où l'enfant a été vue, avec deux signalements",
+    "radius": "Rayon d'alerte · 5 km",
+    "sightings": "Signalements à proximité",
+    "sighting1": "Marché Mokolo · il y a 25 min",
+    "sighting2": "Carrefour Warda · il y a 1 h",
+    "cta": "Je l'ai vue"
+  },
+  "map": {
+    "label": "Carte du Cameroun en carrés, avec les alertes et signalements de démonstration autour des grandes villes.",
+    "alerts_one": "{{count}} alerte",
+    "alerts_other": "{{count}} alertes",
+    "sightings_one": "{{count}} signalement",
+    "sightings_other": "{{count}} signalements",
+    "legendAlerts": "Alertes actives",
+    "legendSightings": "Signalements",
+    "demo": "Données de démo"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  // Root config: it only points to the two real configs below.
+  // - tsconfig.app.json  → your React code in src/
+  // - tsconfig.node.json → vite.config.ts (runs in Node, not in the browser)
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
