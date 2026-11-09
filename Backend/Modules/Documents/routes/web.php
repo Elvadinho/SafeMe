@@ -1,8 +1,3 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use Modules\Documents\Http\Controllers\DocumentsController;
-
-Route::middleware(['auth', 'verified'])->group(function () {
-    Route::resource('documents', DocumentsController::class)->names('documents');
-});
+// This module is an API only (React frontend). No web routes.
